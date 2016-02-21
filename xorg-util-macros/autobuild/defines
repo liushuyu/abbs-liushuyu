@@ -1,0 +1,3 @@
+PKGNAME=xorg-util-macros
+PKGDES="X.Org Autotools macros"
+PKGDEP=""

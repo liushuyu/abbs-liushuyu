@@ -1,0 +1,4 @@
+PKGNAME=liblo
+PKGDES="A lightweight OSC (Open Sound Control) implementation"
+PKGDEP="glibc"
+
