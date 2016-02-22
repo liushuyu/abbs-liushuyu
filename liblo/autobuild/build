@@ -1,4 +1,4 @@
 ./configure --prefix=/usr
 make
-make install prefix="$PKGDIR"
+make install prefix="$PKGDIR/usr"
 
