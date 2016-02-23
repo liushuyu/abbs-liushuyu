@@ -10,7 +10,8 @@ make
 cd ../ExternalPrograms/Spliter && make
 cd ../Controller && make
 
-make DESTDIR="$PKGDIR/" install
+cd $SRCDIR/build
+make DESTDIR="$PKGDIR" install
 # install external programs
 install -Dm755 ../ExternalPrograms/Spliter/spliter "$PKGDIR/usr/bin/spliter"
 install -Dm755 ../ExternalPrograms/Controller/controller "$PKGDIR/usr/bin/controller"
@@ -21,5 +22,5 @@ cp -a ../instruments/banks "$PKGDIR/usr/share/zynaddsubfx"
 cp -a ../instruments/examples "$PKGDIR/usr/share/zynaddsubfx"
 # desktop file and icon
 install -Dm644 "$SRCDIR/zynaddsubfx.svg" "$PKGDIR/usr/share/pixmaps/zynaddsubfx.svg"
-install -Dm644 "$SRCDIR/zynaddsubfx_jack.desktop" "$PKGDIR/usr/share/applications/zynaddsubfx_jack.desktop"
-install -Dm644 "$SRCDIR/zynaddsubfx_alsa.desktop" "$PKGDIR/usr/share/applications/zynaddsubfx_alsa.desktop"
+install -Dm644 "$SRCDIR/zynaddsubfx-jack.desktop" "$PKGDIR/usr/share/applications/zynaddsubfx-jack.desktop"
+install -Dm644 "$SRCDIR/zynaddsubfx-alsa.desktop" "$PKGDIR/usr/share/applications/zynaddsubfx-alsa.desktop"
