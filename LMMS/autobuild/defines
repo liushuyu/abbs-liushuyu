@@ -1,6 +1,5 @@
-PKGNAME=lmms-git
-PKGVER=1.1.90
+PKGNAME=lmms
 PKGDES="The Linux MultiMedia Studio."
-PKGDEP="qt-4 sdl_sound jack libsamplerate fluidsynth zynaddsubfx portaudio x11-lib shared-mime-info hicolor-icon-theme desktop-file-utils"
+PKGDEP="qt-4 sdl_sound jack libsamplerate fluidsynth zynaddsubfx portaudio x11-lib shared-mime-info hicolor-icon-theme desktop-file-utils libgig alsa-lib"
 BUILDDEP="git cmake ladspa raptor2 rasqal x11-lib freetype redland gcc-runtime wine 32subsystem"
 PKGRECOM="wine fftw"
