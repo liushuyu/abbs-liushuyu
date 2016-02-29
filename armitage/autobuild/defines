@@ -1,0 +1,5 @@
+PKGNAME=armitage
+PKGSEC=security
+PKGDEP="openjdk metasploit"
+PKGDES="Armitage is a graphical cyber attack management tool for Metasploit"
+BUILDDEP="apache-ant openjdk"

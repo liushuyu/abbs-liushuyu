@@ -1,0 +1,1 @@
+sed -i 's/-jar\ armitage\.jar/-jar\ \/usr\/lib\/armitage\/armitage.jar/g' ${SRCDIR}/dist/unix/armitage  ${SRCDIR}/dist/unix/teamserver

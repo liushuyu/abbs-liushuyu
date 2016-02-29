@@ -1,0 +1,19 @@
+ant clean
+ant compile
+cp -r resources/ bin/
+cp -r scripts/ bin/
+rm -rf bin/*/*/.svn
+rm -rf bin/*/.svn
+ant jar
+
+
+	# kill the silly .svn file
+rm -rf armitage/.svn
+mkdir armitage
+install -Dm644 armitage.jar ${PKGDIR}/usr/lib/armitage/armitage.jar
+install -m644  cortana.jar ${PKGDIR}/usr/lib/armitage/cortana.jar
+install -Dm644 readme.txt ${PKGDIR}/usr/share/docs/armitage/README.txt
+#cp whatsnew.txt armitage
+install -m755 dist/unix/armitage ${PKGDIR}/usr/bin/armitage
+install -m755 dist/unix/teamserver ${PKGDIR}/usr/bin/teamserver
+install -m644 dist/unix/armitage-logo.png ${PKGDIR}/usr/share/pixmaps/armitage-logo.png

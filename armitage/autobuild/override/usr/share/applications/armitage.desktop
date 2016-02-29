@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Armitage
+Comment=Armitage is a graphical cyber attack management tool for Metasploit
+Keywords=metasploit;security;armitage;exploit;
+Exec=armitage
+Icon=armitage
+Terminal=false
+Type=Application
+Categories=Java;Utility;
